@@ -1,0 +1,58 @@
+package thuchanh1_1;
+
+import java.util.Scanner;
+
+public class vehicle {
+	public String name, type;
+	public int dungTich;
+	public Float triGia, thue;
+	public vehicle() {
+		super();
+		this.name = name;
+		this.type = type;
+		this.dungTich = dungTich;
+		this.triGia = triGia;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public int getDungTich() {
+		return dungTich;
+	}
+	public void setDungTich(int dungTich) {
+		this.dungTich = dungTich;
+	}
+	public Float getTriGia() {
+		return triGia;
+	}
+	public void setTriGia(Float triGia) {
+		this.triGia = triGia;
+	}
+	public void thue() {
+		if(dungTich < 100) {
+			thue = triGia * 0.01f ; 
+		}else {
+			if(dungTich >= 100 && dungTich <=200) {
+				thue = triGia * 0.03f;
+			}else {
+				if(dungTich > 200) {
+					thue = triGia * 0.05f;
+				}
+			}
+		}
+	}
+	@Override
+	public String toString() {
+		return name + "              " + type + "         " + dungTich + "               " + triGia + "           " + thue;
+	}
+	
+}
