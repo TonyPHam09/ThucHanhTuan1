@@ -1,0 +1,22 @@
+package thuchanh1_1;
+
+import java.util.ArrayList;
+
+public class danhSach {
+	public ArrayList<vehicle> listVehicle;
+	
+	public danhSach() {
+		this.listVehicle = new ArrayList<vehicle>();
+	}
+	public danhSach(ArrayList<vehicle> listVehicles) {
+		this.listVehicle = listVehicle;
+	}
+	public void add(vehicle vc) {
+		this.listVehicle.add(vc);
+	}
+	public void xuat() {
+		for(vehicle vehicle : listVehicle) {
+			System.out.println(vehicle);
+		}
+	}
+}
