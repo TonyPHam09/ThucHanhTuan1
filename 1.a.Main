@@ -1,0 +1,47 @@
+package thuchanh1_1;
+
+import java.util.Scanner;
+
+public class main {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		danhSach ds = new danhSach();
+		int a;
+		do {
+			System.out.println("\n1.nhap thong tin");
+			System.out.println("2.xuat thong tin");
+			System.out.println("3.thoat");
+			a = input.nextInt();
+			 if(a < 1 || a > 3) {
+				 System.out.println("------------------");
+				 System.out.println("vui long nhap lai!");
+				 System.out.println("------------------");
+			 }else {
+				 switch(a) {
+				 case 1: {
+					 vehicle vc = new vehicle();
+					 System.out.println("nhap ten chu so huu: ");
+					 input.nextLine();
+					 vc.setName(input.nextLine());
+					 System.out.println("nhap loai xe: ");
+					 vc.setType(input.nextLine());
+					 System.out.println("nhap dung tich: ");
+					 vc.setDungTich(input.nextInt());
+					 System.out.println("nhap tri gia: ");
+					 vc.setTriGia(input.nextFloat());
+					 vc.thue();
+					 ds.add(vc);
+					 break;
+				 }
+				 case 2: {
+					 System.out.println("\nten chu xe         " + "loai xe      " + "dung tich     " + "tri gia        " + "thue phai nop");
+					 System.out.println("-----------------------------------------------------------------------------------------------");
+					 ds.xuat();
+					 break;
+				 }
+				 
+				 }
+			 }
+		}while (a != 3);
+	}
+}
