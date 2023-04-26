@@ -26,7 +26,7 @@ public class main {
 					 System.out.println("nhap ten hang: ");
 					 htp.setTenHang(input.nextLine());
 					 System.out.println("nhap don gia: ");
-//					 htp.setDonGia(input.nextInt());
+					 htp.setDonGia(input.nextInt());
 //					 System.out.println("");
 //                     System.out.println("1.Hang con han");
 //                	 System.out.println("2.Hang het han");
