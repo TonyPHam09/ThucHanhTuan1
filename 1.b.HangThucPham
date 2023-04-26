@@ -1,7 +1,9 @@
 package thuchanh1_b;
 
+import javax.print.DocFlavor.STRING;
+
 public class HangThucPham {
-	public String maHang, tenHang;
+	public String maHang, tenHang, ghiChu;
 	public int ngaySX, thangSX, namSX, ngayHH, thangHH, namHH;
 	public float donGia;
 	public HangThucPham() {
@@ -73,5 +75,12 @@ public class HangThucPham {
 	}
 	public void setDonGia(float donGia) {
 		this.donGia = donGia;
+	}
+	public void ghiChu() {
+		System.out.println("het han");
+	}
+	@Override
+	public String toString() {
+		return  maHang + "\t\t" + tenHang + "\t\t" + donGia + "\t\t" + ngaySX + "/" + thangSX + "/" + namSX + "\t\t" + ngayHH + "/" + thangHH + "/" + namHH + "\t\t" + ghiChu;
 	}
 }
