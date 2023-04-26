@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class vehicle {
 	public String name, type;
 	public int dungTich;
-	public Float triGia, thue;
+	public Double triGia, thue;
 	public vehicle() {
 		super();
 		this.name = name;
@@ -31,28 +31,28 @@ public class vehicle {
 	public void setDungTich(int dungTich) {
 		this.dungTich = dungTich;
 	}
-	public Float getTriGia() {
+	public Double getTriGia() {
 		return triGia;
 	}
-	public void setTriGia(Float triGia) {
+	public void setTriGia(Double triGia) {
 		this.triGia = triGia;
 	}
 	public void thue() {
 		if(dungTich < 100) {
-			thue = triGia * 0.01f ; 
+			thue = triGia * 0.01 ; 
 		}else {
 			if(dungTich >= 100 && dungTich <=200) {
-				thue = triGia * 0.03f;
+				thue = triGia * 0.03;
 			}else {
 				if(dungTich > 200) {
-					thue = triGia * 0.05f;
+					thue = triGia * 0.05;
 				}
 			}
 		}
 	}
 	@Override
 	public String toString() {
-		return name + "              " + type + "         " + dungTich + "               " + triGia + "           " + thue;
+		return name + "\t\t" + type + "\t\t" + dungTich + "\t\t" + triGia + "\t\t" + thue;
 	}
 	
 }
