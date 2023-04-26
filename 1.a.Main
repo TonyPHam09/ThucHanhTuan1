@@ -28,13 +28,13 @@ public class main {
 					 System.out.println("nhap dung tich: ");
 					 vc.setDungTich(input.nextInt());
 					 System.out.println("nhap tri gia: ");
-					 vc.setTriGia(input.nextFloat());
+					 vc.setTriGia(input.nextDouble());
 					 vc.thue();
 					 ds.add(vc);
 					 break;
 				 }
 				 case 2: {
-					 System.out.println("\nten chu xe         " + "loai xe      " + "dung tich     " + "tri gia        " + "thue phai nop");
+					 System.out.println("\nten chu xe" + "\tloai xe\t" + "\tdung tich\t" + "tri gia\t" + "\tthue phai nop");
 					 System.out.println("-----------------------------------------------------------------------------------------------");
 					 ds.xuat();
 					 break;
