@@ -1,0 +1,22 @@
+package thuchanh1_b;
+
+import java.util.ArrayList;
+
+public class danhSach {
+	public ArrayList<HangThucPham> listHTP;
+	
+	public danhSach() {
+		this.listHTP = new ArrayList<HangThucPham>();
+	}
+	public danhSach(ArrayList<HangThucPham> listHTP) {
+		this.listHTP = listHTP;
+	}
+	public void add(HangThucPham htp) {
+		this.listHTP.add(htp);
+	}
+	public void xuat() {
+		for(HangThucPham hangThucPham : listHTP) {
+			System.out.println(hangThucPham);
+		}
+	}
+}
